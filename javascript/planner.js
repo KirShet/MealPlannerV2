@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function(){
               newDiv.className = "u-align-center u-container-style u-image u-product-control u-products-item u-repeater-item u-image-1";
               newDiv.setAttribute("data-product-id", "2");
               newDiv.setAttribute("data-href", "products/мужская-футболка.html");
-              newDiv.style.backgroundImage = 'url(/images/'+element["img"]+')';
+              newDiv.style.backgroundImage = 'url(images/meals/'+element["img"]+')';
 
               // Создаем блок HTML с содержимым
               var htmlContent = '<div class="u-container-layout u-similar-container u-container-layout-1">' +
