@@ -1,7 +1,7 @@
 <?php
 session_start();
 $config = (object)[
-    "root" => "/Site2",
+    "root" => "/MealPlannerV2",
     "siteName" => "Мой сайт",
 
     "dbHost" => "",
