@@ -10,13 +10,14 @@ if($_POST["numberOfRecep"] == '5'){
 }else if($_POST["numberOfRecep"] == '2'){
     $response['meals']=['break','dinner'];
 }
-$a = 0;
+// $a = 0;
 foreach ($response['meals'] as $key => $value){
-    if (isset($_SESSION['meal'][$value])){
-        $eating = $_SESSION['meal'][$value];
-    }else{
+    // if (isset($_SESSION['meal'][$value])){
+    //     // $eating = $_SESSION['meal'][$value];
+    // }else{
         $eating = getMeal($value, true);
-    }
+        $eating['caloriesPerMeal'] = round($_POST["kcalPerDay"] / $_POST["numberOfRecep"]);
+    // }
     $response['meals'][$key]=$eating;
 }
 //туд код

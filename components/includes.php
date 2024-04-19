@@ -54,6 +54,7 @@ function getMeal($meals = 'break', $meal = false)
         }
         // $eating = $meal_time_results[$random_key];
         $meal_time_results = $meal_time_results[$random_key];
+        $meal_time_results['meals'] = $meals;
         $_SESSION['meal'][$meals] = $meal_time_results;
     }
 
