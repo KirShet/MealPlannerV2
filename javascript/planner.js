@@ -26,9 +26,10 @@ document.addEventListener('DOMContentLoaded', function(){
         console.log("ChatGPT - Это не выводится");
           // Находим элемент с классом "u-repeater u-repeater-1"
           var repeaterElement = document.querySelector("#u-meal");
-
+          var sectionElement = document.querySelector(".u-section-3");
           // Проверяем, был ли найден элемент
           if (repeaterElement) {
+            sectionElement.style.display = "block";
             result['meals'].forEach(element => {
               console.log(element);
               // Создаем новый элемент div

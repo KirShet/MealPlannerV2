@@ -42491,6 +42491,11 @@ a.u-link.u-text-hover-grey-90:hover {
             background-color: #1a1a1a;
         }
 
+        section.u-section-3
+        {
+          display: none;
+        }
+
         .u-input.u-custom-color-8,
         .u-field-input.u-custom-color-8,
         .u-button-style.u-custom-color-8,
