@@ -46,7 +46,8 @@ document.addEventListener('DOMContentLoaded', function(){
                   '<div class="u-container-layout u-valign-top u-container-layout-2">' +
                   '<form class="u-file-icon u-icon u-text-custom-color-1 u-icon-1 u-heart-form" data-href="https://nicepage.com">'+
                     '<img src="images/2813225-91f61e65.png" alt="">'+
-                    '<input type="hidden" value="'+element["meals"]+'" name="recaptchaResponse">'+
+                    '<input type="hidden" value="'+element["meals"]+'" name="dish">'+
+                    '<input type="hidden" value="'+ Math.round(element["caloriesPerMeal"]) + '" name="caloriesPerMeal">'+
                     '<input type="submit" value="" name="IconHeart">'+
                   '</form><!--product_title-->' +
                   '<h4 class="u-align-center u-custom-font u-font-open-sans u-product-control u-text u-text-2">' +
