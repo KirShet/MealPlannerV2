@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function(){
           var sectionElement = document.querySelector(".u-section-3");
           // Проверяем, был ли найден элемент
           if (repeaterElement) {
+            if (repeaterElement.innerHTML.trim().length < 1) {
+            console.log("Блок с id 'u-meal' пуст.");
             sectionElement.style.display = "block";
             result['meals'].forEach(element => {
               console.log(element);
@@ -36,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function(){
               var newDiv = document.createElement("div");
 
               // Устанавливаем атрибуты и стили для нового элемента
-              newDiv.className = "u-align-center u-container-style u-image u-product-control u-products-item u-repeater-item u-image-1";
+              newDiv.className = "u-align-center u-container-style u-image u-product-control u-products-item u-repeater-item u-image-1 u-meal-"+element["meals"];
               newDiv.setAttribute("data-product-id", "2");
               newDiv.setAttribute("data-href", "products/мужская-футболка.html");
               newDiv.style.backgroundImage = 'url(images/meals/'+element["img"]+')';
@@ -48,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
                   '<form class="u-file-icon u-icon u-text-custom-color-1 u-icon-1 u-heart-form" data-href="https://nicepage.com">'+
                     '<img src="images/2813225-91f61e65.png" alt="">'+
                     '<input type="hidden" value="'+element["meals"]+'" name="dish">'+
-                    '<input type="hidden" value="'+ Math.round(element["caloriesPerMeal"]) + '" name="caloriesPerMeal">'+
+                    '<input type="hidden" value="'+ Math.round(element["caloriesPerMeal"]) + '"name="caloriesPerMeal">'+
                     '<input type="submit" value="" name="IconHeart">'+
                   '</form><!--product_title-->' +
                   '<h4 class="u-align-center u-custom-font u-font-open-sans u-product-control u-text u-text-2">' +
@@ -95,7 +97,9 @@ document.addEventListener('DOMContentLoaded', function(){
                   console.error("Не удалось добавить новый блок в конец блока 'u-repeater u-repeater-1'.");
               }
             });
-              
+          } else {
+            console.log("Блок с id 'u-meal' содержит контент.");
+          }
           } else {
               // Если элемент не найден, выводим сообщение об ошибке
               console.error("Элемент с классом 'u-repeater u-repeater-1' не найден.");

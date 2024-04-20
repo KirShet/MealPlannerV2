@@ -35,19 +35,24 @@ document.addEventListener('DOMContentLoaded', function(){
               // Создаем новый элемент div
               var newDiv = document.createElement("div");
 
+              var mealElement = document.querySelector(".u-meal-"+element["meals"]);
               // Устанавливаем атрибуты и стили для нового элемента
-              newDiv.className = "u-align-center u-container-style u-image u-product-control u-products-item u-repeater-item u-image-1";
-              newDiv.setAttribute("data-product-id", "2");
-              newDiv.setAttribute("data-href", "products/мужская-футболка.html");
-              newDiv.style.backgroundImage = 'url(images/meals/'+element["img"]+')';
-
+              // mealElement.className = "u-align-center u-container-style u-image u-product-control u-products-item u-repeater-item u-image-1";
+              // mealElement.setAttribute("data-product-id", "2");
+              // mealElement.setAttribute("data-href", "products/мужская-футболка.html");
+              mealElement.style.backgroundImage = 'url(images/meals/'+element["img"]+')';
+              
+              // Проверяем, существует ли такой элемент
+              if (mealElement) {
+              
               // Создаем блок HTML с содержимым
-              var htmlContent = '<div class="u-container-layout u-similar-container u-container-layout-1">' +
+              mealElement.innerHTML = '<div class="u-container-layout u-similar-container u-container-layout-1">' +
                   '<div class="custom-expanded u-black u-container-style u-group u-opacity u-opacity-50 u-group-1">' +
                   '<div class="u-container-layout u-valign-top u-container-layout-2">' +
                   '<form class="u-file-icon u-icon u-text-custom-color-1 u-icon-1 u-heart-form" data-href="https://nicepage.com">'+
                     '<img src="images/2813225-91f61e65.png" alt="">'+
                     '<input type="hidden" value="'+element["meals"]+'" name="dish">'+
+                    '<input type="hidden" value="'+ Math.round(element["caloriesPerMeal"]) + '"name="caloriesPerMeal">'+
                     '<input type="submit" value="" name="IconHeart">'+
                   '</form><!--product_title-->' +
                   '<h4 class="u-align-center u-custom-font u-font-open-sans u-product-control u-text u-text-2">' +
@@ -77,22 +82,19 @@ document.addEventListener('DOMContentLoaded', function(){
                   '&nbsp;Энерг. ценность: '+ element["caloriesPerMeal"] + ' ккал'+
                     '</p>'+
                   '</div>' +
-                  '</div>' +
+                  '</div>'+
                   '</div>';
 
-
-                  // Добавляем содержимое htmlContent в newDiv
-              newDiv.innerHTML = htmlContent;
-
-              // Добавляем новый элемент в конец блока "u-repeater u-repeater-1"
-              repeaterElement.appendChild(newDiv);
-
-              // Проверяем, добавился ли блок
-              if (repeaterElement.contains(newDiv)) {
-                  console.log("Новый блок успешно добавлен в конец блока 'u-repeater u-repeater-1'.");
+                          //   // Проверяем, добавился ли блок
+                          //   if (repeaterElement.contains(newDiv)) {
+                          //     console.log("Новый блок успешно добавлен в конец блока 'u-repeater u-repeater-1'.");
+                          // } else {
+                          //     console.error("Не удалось добавить новый блок в конец блока 'u-repeater u-repeater-1'.");
+                          // }
               } else {
-                  console.error("Не удалось добавить новый блок в конец блока 'u-repeater u-repeater-1'.");
+                  console.error("Элемент с id 'break' не найден.");
               }
+
             });
               
           } else {
