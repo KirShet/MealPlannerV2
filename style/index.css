@@ -1485,6 +1485,22 @@
   padding: 10px 0;
 }
 
+.IconHeart{
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/2813225-91f61e65.png");
+    /* background-image: url(../img/OIG2.jpg); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+    /* padding: 5px; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  background-color: #f000;
+}
+
 @media (max-width: 1199px) {
    .u-section-6 {
     background-position: 50% 50%;

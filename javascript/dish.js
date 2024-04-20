@@ -50,10 +50,9 @@ document.addEventListener('DOMContentLoaded', function(){
                   '<div class="custom-expanded u-black u-container-style u-group u-opacity u-opacity-50 u-group-1">' +
                   '<div class="u-container-layout u-valign-top u-container-layout-2">' +
                   '<form class="u-file-icon u-icon u-text-custom-color-1 u-icon-1 u-heart-form" data-href="https://nicepage.com">'+
-                    '<img src="images/2813225-91f61e65.png" alt="">'+
                     '<input type="hidden" value="'+element["meals"]+'" name="dish">'+
                     '<input type="hidden" value="'+ Math.round(element["caloriesPerMeal"]) + '"name="caloriesPerMeal">'+
-                    '<input type="submit" value="" name="IconHeart">'+
+                    '<input type="submit" value="" name="IconHeart" class="IconHeart">'+
                   '</form><!--product_title-->' +
                   '<h4 class="u-align-center u-custom-font u-font-open-sans u-product-control u-text u-text-2">' +
                   '<a class="u-product-title-link" href="products/мужская-футболка.html">'+element["name"]+'</a>' +
