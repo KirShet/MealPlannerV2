@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     document.addEventListener('submit', function(e) {
       console.log("ChatGPT - Это не выводится");
-      if (e.target.classList.contains('u-inner-form')) {
+      if (e.target.classList.contains('u-heart-form')) {
         console.log("ChatGPT - Это не выводится");
         e.preventDefault();
         formSend(e);
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
     async function formSend(e) {
       let form = e.target;
       let formData = new FormData(form);
-      let response = await fetch('action/planner.php',{
+      let response = await fetch('action/dish.php',{
         method: 'POST',
         body: formData
       });
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
               var htmlContent = '<div class="u-container-layout u-similar-container u-container-layout-1">' +
                   '<div class="custom-expanded u-black u-container-style u-group u-opacity u-opacity-50 u-group-1">' +
                   '<div class="u-container-layout u-valign-top u-container-layout-2">' +
-                  '<form class="u-file-icon u-icon u-text-custom-color-1 u-icon-1 u-heart-form" data-href="https://nicepage.com">'+
+                  '<form class="u-file-icon u-icon u-text-custom-color-1 u-icon-1" data-href="https://nicepage.com">'+
                     '<img src="images/2813225-91f61e65.png" alt="">'+
                     '<input type="hidden" value="'+element["meals"]+'" name="recaptchaResponse">'+
                     '<input type="submit" value="" name="IconHeart">'+

@@ -24,6 +24,9 @@
     <?= setHrefSrc('javascript/nicepage', 'js', 'src') ?> defer=""></script> -->
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/planner', 'js', 'src') ?> defer=""></script>
+    <!-- dish -->
+    <script class="u-script" type="text/javascript" 
+    <?= setHrefSrc('javascript/dish', 'js', 'src') ?> defer=""></script>
     
     <meta name="theme-color" content="#803bec">
     <meta property="og:title" content="Главная">
