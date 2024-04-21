@@ -18,16 +18,19 @@
         }
     ?>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    <!-- <script class="u-script" type="text/javascript" 
-    <?= setHrefSrc('javascript/jquery', 'js', 'src') ?> defer=""></script>
-    <script class="u-script" type="text/javascript" 
-    <?= setHrefSrc('javascript/nicepage', 'js', 'src') ?> defer=""></script> -->
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/planner', 'js', 'src') ?> defer=""></script>
     <!-- dish -->
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/dish', 'js', 'src') ?> defer=""></script>
-    
+    <!-- Responsive -->
+    <script class="u-script" type="text/javascript" 
+    <?= setHrefSrc('javascript/responsive', 'js', 'src') ?> defer=""></script>
+    <!-- <script class="u-script" type="text/javascript" 
+    <?= setHrefSrc('javascript/jquery', 'js', 'src') ?> defer=""></script>
+    <script class="u-script" type="text/javascript" 
+    <?= setHrefSrc('javascript/nicepage', 'js', 'src') ?> defer=""></script> -->
+
     <meta name="theme-color" content="#803bec">
     <meta property="og:title" content="Главная">
     <meta property="og:type" content="website">

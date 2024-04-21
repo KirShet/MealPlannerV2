@@ -163,43 +163,52 @@ loadComponent('header');
     <section class="u-clearfix u-grey-90 u-section-5" id="carousel_7351">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-custom-color-1 u-shape u-shape-rectangle u-shape-1"></div>
-        <div class="u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
+        <div class="u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1" data-pswp-uid="1">
           <div class="u-gallery-inner u-gallery-inner-1">
-            <div class="u-effect-fade u-gallery-item">
+            <div class="u-effect-fade u-gallery-item" data-pswp-item-id="0" data-gallery-uid="1">
               <div class="u-back-slide" data-image-width="2493" data-image-height="2245">
                 <img class="u-back-image u-expanded" src="images/1.png">
               </div>
               <div class="u-over-slide u-shading u-over-slide-1"></div>
             </div>
-            <div class="u-effect-fade u-gallery-item">
+            <div class="u-effect-fade u-gallery-item" data-pswp-item-id="1" data-gallery-uid="1">
               <div class="u-back-slide" data-image-width="1024" data-image-height="1024">
-                <img class="u-back-image u-expanded" src="images/654a0711c2765.jpeg">
+                <img class="u-back-image u-expanded" src="images/3.png" alt="Создавай">
               </div>
-              <div class="u-over-slide u-shading u-over-slide-2"></div>
+              <div class="u-over-slide u-shading u-over-slide-2">
+                <h3 class="u-custom-font u-gallery-heading u-text-font">Создавай</h3>
+                <p class="u-custom-font u-font-open-sans u-gallery-text" style="font-size: 1.125rem; background-image: none;">Расскажите о себе, своих диетических предпочтениях и целях. За считанные секунды разработается план питания в соответствии с вашими потребностями! Всегда есть возможность изменить настройки позже.</p>
+              </div>
             </div>
-            <div class="u-effect-fade u-gallery-item">
+            <div class="u-effect-fade u-gallery-item" data-pswp-item-id="2" data-gallery-uid="1">
               <div class="u-back-slide" data-image-width="2495" data-image-height="2095">
                 <img class="u-back-image u-expanded" src="images/11.png">
               </div>
               <div class="u-over-slide u-shading u-over-slide-3"></div>
             </div>
-            <div class="u-effect-fade u-gallery-item">
+            <div class="u-effect-fade u-gallery-item" data-pswp-item-id="3" data-gallery-uid="1">
               <div class="u-back-slide" data-image-width="1024" data-image-height="1024">
-                <img class="u-back-image u-expanded" src="images/654a0711c2765.jpeg">
+                <img class="u-back-image u-expanded" src="images/3.png" alt="Готовь">
               </div>
-              <div class="u-over-slide u-shading u-over-slide-4"></div>
+              <div class="u-over-slide u-shading u-over-slide-4">
+                <h3 class="u-custom-font u-gallery-heading u-text-font">Готовь</h3>
+                <p class="u-custom-font u-font-open-sans u-gallery-text" style="font-size: 1.125rem; background-image: none;">Наслаждайтесь приготовлением и употреблением вкусных блюд без стресса, связанного с планированием. Не только знайте, что питаетесь лучше, распределяйте больше времени и энергии для других дел.</p>
+              </div>
             </div>
-            <div class="u-effect-fade u-gallery-item">
+            <div class="u-effect-fade u-gallery-item" data-pswp-item-id="4" data-gallery-uid="1">
               <div class="u-back-slide" data-image-width="2493" data-image-height="2363">
                 <img class="u-back-image u-expanded" src="images/aaa1.png">
               </div>
               <div class="u-over-slide u-shading u-over-slide-5"></div>
             </div>
-            <div class="u-effect-fade u-gallery-item">
+            <div class="u-effect-fade u-gallery-item" data-pswp-item-id="5" data-gallery-uid="1">
               <div class="u-back-slide" data-image-width="1024" data-image-height="1024">
-                <img class="u-back-image u-expanded" src="images/654a0711c2765.jpeg">
+                <img class="u-back-image u-expanded" src="images/3.png" alt="Выбирай">
               </div>
-              <div class="u-over-slide u-shading u-over-slide-6"></div>
+              <div class="u-over-slide u-shading u-over-slide-6">
+                <h3 class="u-custom-font u-gallery-heading u-text-font">Выбирай</h3>
+                <p class="u-custom-font u-font-open-sans u-gallery-text" style="font-size: 1.125rem; background-image: none;">Пересмотрите свой план, чтобы убедиться, что все выглядит хорошо, заменив все, что не нравится. Затем просмотрите блюда, чтобы купить необходимые ингредиенты.</p>
+              </div>
             </div>
           </div>
         </div>
