@@ -65,5 +65,6 @@
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
           </div>
+          <style class="offcanvas-style">                        </style>
         </nav>
       </div></header> 
