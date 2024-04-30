@@ -26,6 +26,9 @@
     <!-- Responsive -->
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/responsive', 'js', 'src') ?> defer=""></script>
+    <!-- mail -->
+    <script class="u-script" type="text/javascript" 
+    <?= setHrefSrc('javascript/mail', 'js', 'src') ?> defer=""></script>
     <!-- <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/jquery', 'js', 'src') ?> defer=""></script>
     <script class="u-script" type="text/javascript" 

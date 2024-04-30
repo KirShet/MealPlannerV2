@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add event listener to document for form submission
     document.addEventListener('submit', function(e) {
-        if (e.target.classList.contains('u-inner-form')) {
+        if (e.target.classList.contains('u-inner-form-planner')) {
             e.preventDefault();
             formSend(e);
         } else {
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         if (response.ok) {
             let result = await response.json();
+            // сделать: "диета успешно создана"
             renderMeals(result.meals);
         }
     }

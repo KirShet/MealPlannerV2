@@ -46,7 +46,7 @@ loadComponent('header');
                         <div class="u-container-layout u-container-layout-3">
                           <h2 class="u-custom-font u-text u-text-font u-text-2"> Начните с малого:</h2>
                           <div class="u-expanded-width u-form u-form-1">
-                            <form <?= action('planner');?> class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+                            <form <?= action('planner');?> class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form u-inner-form-planner" source="email" name="form" style="padding: 10px;">
                               <div class="u-form-group u-form-name u-label-left">
                                 <label for="name-bd4f" class="u-label u-spacing-0 u-label-1">Сколько kkal</label>
                                 <input type="text" placeholder="kkal в день" id="name-bd4f" name="kcalPerDay" class="u-border-custom-color-4 u-input u-input-rectangle u-radius u-input-1" required="">
