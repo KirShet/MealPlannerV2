@@ -30,7 +30,7 @@ try {
     $mail->setFrom('kirshet2000@rambler.ru');
 
     // Укажите адрес получателя
-    $mail->addAddress('kirshet2000@gmail.com');
+    $mail->addAddress($email);
 
     $mail->CharSet = 'UTF-8';
     $mail->Encoding = 'base64';
@@ -39,52 +39,97 @@ try {
     $mail->Subject = 'Добро пожаловать в наше сообщество по планированию правильного питания!';
 
     // Укажите текст письма
-    $body = '<!DOCTYPE html>
-    <html style="font-size: 16px;" lang="ru"><head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <meta name="keywords" content="​Здравствуйте '.$username.',">
-    <meta name="description" content="">
-    <title>Страница 3</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Страница-3.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 6.7.6, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
-    
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": ""
-}</script>
-    <meta name="theme-color" content="#803bec">
-    <meta property="og:title" content="Страница 3">
-    <meta property="og:type" content="website">
-  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="./" data-include-products="true" class="u-body u-xl-mode" data-lang="ru">
-    <section class="u-align-left u-clearfix u-container-align-center u-section-2" id="sec-ab6e">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-align-center u-container-style u-grey-5 u-group u-group-1">
-          <div class="u-container-layout u-valign-bottom u-container-layout-1">
-            <h1 class="u-align-center u-custom-font u-text u-text-default u-text-font u-text-1"> Здравствуйте $username,</h1>
-            <p class="u-align-center u-text u-text-custom-color-1 u-text-2"> Мы рады приветствовать вас в нашем <span style="font-weight: 700;">сообществе по правильному питанию</span>! Ваше желание <span style="font-weight: 700;">заботиться </span>
-              <span style="font-weight: 700;">о здоровье</span> и делать осознанные выборы в питании<span style="font-weight: 700;"> важно для нас</span>.<br>
-              <br>Мы постоянно работаем чтоб создавать&nbsp;<span style="font-weight: 700;">полезный и интересный контент</span>, который <span style="font-weight: 700;">поможет достичь целей</span> по здоровому питанию.<br>
-              <br>Если у вас есть какие-либо&nbsp;<br>
-              <span style="font-weight: 700;">вопросы, предложения</span> или просто хотите поделиться своим опытом, не стесняйтесь, <span style="font-weight: 700;">обращайтесь к нам</span>.<br>&nbsp; &nbsp; С уважением <span style="font-weight: 700;">MealPlanner</span>
-              <br>
-            </p>
-            <a href="http://localhost/MealPlannerV2/" class="u-align-center u-btn u-btn-round u-button-style u-color-scheme-summer-time u-custom-color-2 u-radius-50 u-btn-1" target="_blank">Мечтайте и планируйте</a>
-          </div>
+    $body = '<div style="margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:#ffffff">
+        <div style="max-width:600px;margin:0 auto;margin-top:0px">
+            <table width="600" bgcolor="#ffffff" align="center" cellspacing="0" cellpadding="0" border="0" style="border-spacing:0;margin:0 auto">
+        <tbody><tr>
+          <td bgcolor="#ffffff" align="center" style="padding-top:0px;padding-bottom:16px;padding-top:24px;padding-right:27px;padding-left:27px;width:100%;font-size:0;background-color:#020203;/* border-radius: 16px; */border-top-left-radius: 16px;border-top-right-radius: 16px;">						
+            <table width="100%" align="center" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td valign="bottom" style="width:100%;min-width:130px">
+                  <table width="100%" align="left" cellpadding="0" cellspacing="0" style="width:100%;max-width:418px;min-width:130px;border-spacing:0">
+                    <tbody><tr>
+                      <td align="left">
+                        <a href="https://canvas-generations-v1.s3.us-west-2.amazonaws.com/98a2823c-59e4-4efa-ac05-006bb2329a04.png" style="text-decoration:none" target="_blank">
+                          <img alt="MealPlanner" src="https://canvas-generations-v1.s3.us-west-2.amazonaws.com/98a2823c-59e4-4efa-ac05-006bb2329a04.png" style="height:auto;border:0;width: 161px;aspect-ratio: auto 105 / 40;" data-bit="iit">
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+                <td valign="bottom">
+                  <table dir="ltr" width="100%" align="right" cellpadding="0" cellspacing="0" style="width:100%;width:330px">
+                    <tbody><tr>
+                      <td dir="ltr" align="right" style="font-size:0px;padding-bottom:4px">
+                        <table width="122" align="right" cellpadding="0" cellspacing="0" style="display:inline-table;vertical-align:bottom">
+                          <tbody><tr>
+                            <td width="122" align="right" valign="bottom" style="font-size:12px;line-height:16px;font-family:Inter,Arial,sans-serif;color:#818181">
+                              <a href="https://canvas-generations-v1.s3.us-west-2.amazonaws.com/98a2823c-59e4-4efa-ac05-006bb2329a04.png" style="color:#818181;text-decoration:underline" target="_blank">Наша страница</a>
+                            </td>
+                          </tr>
+                        </tbody></table>
+                        <table width="75" align="right" cellpadding="0" cellspacing="0" style="display:inline-table;vertical-align:bottom">
+                          <tbody><tr>
+                            <td width="75" align="right" valign="bottom" style="font-size:12px;line-height:16px;font-family:Inter,Arial,sans-serif;color:#818181">
+                              <a href="https://canvas-generations-v1.s3.us-west-2.amazonaws.com/98a2823c-59e4-4efa-ac05-006bb2329a04.png" style="color:#818181;text-decoration:underline" target="_blank">Наша страница</a>
+                            </td>
+                          </tr>
+                        </tbody></table>												
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table bgcolor="#EEF2F6" width="100%" align="left" cellpadding="0" cellspacing="0" style="border-radius:16px">
+              <tbody><tr>
+                <td>
+                  <table style="width:100%;border-collapse:collapse;border-spacing:0;margin:0;border:0" cellpadding="0" cellspacing="0">
+                    <tbody><tr>
+                      <td align="center" style="padding-bottom:0px">
+                        <a href="https://canvas-generations-v1.s3.us-west-2.amazonaws.com/98a2823c-59e4-4efa-ac05-006bb2329a04.png" style="color: #000000;/* text-decoration:underline; */text-decoration: none;" target="_blank">
+                          <h1> Здравствуйте '.$username.'</h1>
+                          <p> Мы рады приветствовать вас в нашем <span style="font-weight: 700;">сообществе по правильному питанию</span>! Ваше желание <span style="font-weight: 700;">заботиться </span>
+                            <span style="font-weight: 700;">о здоровье</span> и делать осознанные выборы в питании<span style="font-weight: 700;"> важно для нас</span>.<br>
+                            <br>Мы постоянно работаем чтоб создавать&nbsp;<span style="font-weight: 700;">полезный и интересный контент</span>, который <span style="font-weight: 700;">поможет достичь целей</span> по здоровому питанию.<br>
+                            <br>Если у вас есть какие-либо&nbsp;<br>
+                            <span style="font-weight: 700;">вопросы, предложения</span> или просто хотите поделиться своим опытом, не стесняйтесь, <span style="font-weight: 700;">обращайтесь к нам</span>.<br>&nbsp; &nbsp; С уважением <span style="font-weight: 700;">MealPlanner</span>
+                            <br>
+                          </p>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>						
+              <tr>
+                <td align="center" style="padding-right:12px;padding-left:12px;padding-bottom:0px">						
+                  <table width="100%" align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:580px;border-radius:12px">
+                    <tbody>
+                  </tbody></table>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" style="padding-left:14px;padding-right:14px;padding-bottom:16px;padding-top:16px">
+                  <table width="100%" cellpadding="0" cellspacing="0" style="/* background-color:#ff2722; */border:1px solid #ff2722;border-radius:23px;background-color: #ee6a4e;">
+                    <tbody><tr>
+                      <td align="center" valign="middle" height="46" style="font-size:17px;line-height:18px;font-family:Inter,Arial,sans-serif;color:#ffffff">
+                        <a href="https://canvas-generations-v1.s3.us-west-2.amazonaws.com/98a2823c-59e4-4efa-ac05-006bb2329a04.png" style="text-decoration:none;color:#ffffff;display:block;padding-top:14px;padding-bottom:14px;text-align:center" target="_blank">Мечтайте и планируйте</a>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>				
+      </tbody></table>
         </div>
-      </div>
-    </section>
-  
-</body></html>
+  </div>
 ';
     $mail->Body = $body;
 
@@ -95,5 +140,5 @@ $mail->IsHTML(true); // Устанавливаем формат сообщени
     echo json_encode('Email sent successfully');
 } catch (Exception $e) {
     // тоже js
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo json_encode("Message could not be sent. Mailer Error: {$mail->ErrorInfo}");
 }
