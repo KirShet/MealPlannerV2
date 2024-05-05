@@ -29,6 +29,9 @@
     <!-- mail -->
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/mail', 'js', 'src') ?> defer=""></script>
+    <!-- nutrient_table -->
+    <script class="u-script" type="text/javascript" 
+    <?= setHrefSrc('javascript/nutrient_table', 'js', 'src') ?> defer=""></script>
     <!-- <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/jquery', 'js', 'src') ?> defer=""></script>
     <script class="u-script" type="text/javascript" 
