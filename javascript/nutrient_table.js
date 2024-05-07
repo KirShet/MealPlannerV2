@@ -6,16 +6,29 @@ document.addEventListener('DOMContentLoaded', function() {
     inputElements.forEach(function(parentElement) {
         parentElement.addEventListener('change', function(event) {
             var target = event.target; // Получаем целевой элемент, который вызвал событие
+            
+            // Получаем родительскую форму для элемента радиокнопки
+            var form = target.closest('form');
 
             // Проверяем, что целевой элемент является радио-инпутом
             if (target.type === 'radio') {
-                // Выводим значение выбранного радио-инпута
-                console.log(target.value);
-                formSend(target.value);
-                async function formSend(target) {
+                // // Выводим значение выбранного радио-инпута
+                // console.log(target);
+                // formSend(target);
+
+                 // Создаем объект FormData для сбора данных формы
+                let formData = new FormData(form);
+
+                // Добавляем к данным значение выбранного радио-инпута
+                formData.append(target.name, target.value);
+                console.log(formData);
+                // Отправляем данные формы на сервер
+                formSend(formData);
+
+                async function formSend(formData) {
                     let response = await fetch('action/nutrient_table.php', {
                         method: 'POST',
-                        body: target
+                        body: formData
                     });
                     if (response.ok) {
                         let result = await response.json();
@@ -113,6 +126,22 @@ document.addEventListener('DOMContentLoaded', function() {
         // '</div>' +
         // '</div>';
 
+// 
+// let items = ['a', 'b', 'c', 'd', 'e']; // Добавлены дополнительные элементы
+// for (let i = 0; i < items.length; i += 2) {
+//     console.log(items[i], items[i + 1]);
+// }
+let items = ['a', 'b', 'c', 'd', 'e']; // Добавлены дополнительные элементы
+for (let i = 0; i < items.length; i += 2) {
+    if (items[i + 1] !== undefined) {
+        console.log(items[i], items[i + 1]);
+        // 
+    } else {
+        console.log(items[i], "Нет переменной");
+        // 
+    }
+}
+
         // Находим родительский элемент, к которому нужно добавить новый див
         var parentElement = document.querySelector('.u-layout-col');
         // Проверяем наличие родительского элемента
@@ -155,7 +184,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Добавляем новый див в конец родительского элемента
          newDiv.innerHTML = htmlContent;
             parentElement.appendChild(newDiv);
-            console.log("oddDiv VS evenDiv");
+            // console.log("oddDiv VS evenDiv");
+// 
     }
 });
 
