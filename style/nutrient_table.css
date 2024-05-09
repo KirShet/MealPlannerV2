@@ -86,20 +86,23 @@
 
 .u-section-1 .u-text-9 {
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 8px;
   line-height: 1.8;
   font-style: italic;
+  color: #56bfac !important;
 }
 
 .u-section-1 .u-text-10 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin: 20px 0 0;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin: 4px 0 0;
 }
-
+.u-section-1 .u-text-10 .u-icon {
+color: #ee6a4e !important
+}
 .u-section-1 .u-image-2 {
   min-height: 317px;
-  background-image: url("../images/gh.jpg");
+  background-image: url("../images/meals/[0].png");
   background-position: 50% 50%;
   --radius: 50px;
 }

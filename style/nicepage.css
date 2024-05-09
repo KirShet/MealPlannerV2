@@ -25680,7 +25680,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Poppins;
+  font-family: 'Open Sans';
 }
 /*end-variables font-family*/
 /*begin-variables color*/
@@ -40551,7 +40551,7 @@ li.active > a.u-button-style.u-text-palette-5-base,
 li.active > a.u-button-style.u-text-palette-5-base[class*="u-border-"],
 a.u-button-style.u-text-palette-5-base,
 a.u-button-style.u-text-palette-5-base[class*="u-border-"] {
-  color: #35393e !important;
+  color: #111111 !important;
 }
 a.u-button-style.u-text-palette-5-base:hover,
 a.u-button-style.u-text-palette-5-base[class*="u-border-"]:hover,

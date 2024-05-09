@@ -5,7 +5,6 @@
     <meta name="keywords" content="Meal Planner поможет вам составить индивидуальный план питания, учитывающий ваши вкусы. Вы сможете достичь своих диетических и питательных целей с помощью нашего калькулятора калорий и ежедневных меню.">
     <meta name="description" content="">
     <title>Главная</title>
-    <link rel="stylesheet" <?= setHrefSrc('style/nicepage', 'css') ?> media="screen">
     <?php 
         if (basename($_SERVER['REQUEST_URI']) == "nutrient_table.php") {
     ?>
@@ -17,6 +16,7 @@
     <?php 
         }
     ?>
+    <link rel="stylesheet" <?= setHrefSrc('style/nicepage', 'css') ?> media="screen">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/planner', 'js', 'src') ?> defer=""></script>
