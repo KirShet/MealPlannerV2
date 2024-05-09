@@ -18,10 +18,6 @@ loadComponent('header');
                     <h4 class="u-custom-font u-text u-text-font u-text-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""> Блюда приёма пищи</h4>
                       <div class="custom-expanded u-form u-form-radios-spacing-0 u-form-1">
                         <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
-                          <div class="u-form-email u-form-group">
-                            <label for="email-5433" class="u-label">Эл. почта</label>
-                            <input type="email" placeholder="Введите имейл адрес" id="email-5433" name="email" class="u-input u-input-rectangle" required="">
-                          </div>
                           <div class="u-form-group u-form-input-layout-vertical u-form-radiobutton u-form-group-2">
                             <label class="u-form-control-hidden u-label"></label>
                             <div class="u-form-radio-button-wrapper">
@@ -42,10 +38,6 @@ loadComponent('header');
                                 <label class="u-field-label u-text-custom-color-3" for="field-67be">Ужин</label>
                               </div>
                             </div>
-                          </div>
-                          <div class="u-align-left u-form-group u-form-submit">
-                            <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1">Отправить</a>
-                            <input type="submit" value="submit" class="u-form-control-hidden">
                           </div>
                           <div class="u-form-send-message u-form-send-success"> Спасибо! Ваше сообщение отправлено. </div>
                           <div class="u-form-send-error u-form-send-message"> Отправка не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз. </div>

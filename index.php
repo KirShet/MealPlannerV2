@@ -11,7 +11,7 @@ loadComponent('header');
                 <h2 class="u-align-left u-custom-font u-font-open-sans u-text u-text-1"> Создание удобной<br>диеты
                 </h2>
                 <div class="u-border-13 u-border-custom-color-1 u-line u-line-horizontal u-line-1"></div>
-                <p class="u-align-right u-text u-text-2"><a href="#carousel_f4f0">Меню для вас</a><br><a href="#carousel_01c9">Ваш рацион</a><br><a href="#carousel_7351">Привычки</a><br><a href="#sec-8ab1">Подписка  </a>
+                <p class="u-align-right u-text u-text-2"><a href="#carousel_f4f0">Меню для вас</a><br><a href="#carousel_27c0">Ваш рацион</a><br><a href="#carousel_7351">Привычки</a><br><a href="#carousel_229a">Подписка  </a>
                 </p>
               </div>
             </div>
@@ -214,6 +214,7 @@ loadComponent('header');
         </div>
       </div>
     </section>
+    <div id="carousel_229a"></div>
       <?php
       loadComponent('subs','footer');
       ?>

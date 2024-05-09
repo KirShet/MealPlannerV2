@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     function renderMeals(result) {
-        
+
         var blocksToDelete = document.querySelectorAll(".possible-to-delete");
         blocksToDelete.forEach(function(block) {
           block.parentNode.removeChild(block);
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>`;
         }
 
-        function createRow(content1, img1, content2, img2) {
+        function createRow(content1, img1, content2=' ', img2=' ') {
             return `
             <div class="u-layout-row possible-to-delete">${content1}${img1}${content2}${img2}</div>`;
         }
@@ -213,7 +213,30 @@ for (let i = 0; i < result.length; i += 2) {
         }
     } else {
         console.log(result[i], "Нет переменной");
-        // 
+        if (childCount % 2 === 0) {
+            var newDiv = document.createElement('div');
+            newDiv.className = 'u-size-30';
+            var htmlContent = createRow(
+                createContentBlock(result[i]['name'], result[i]['prot_per_100_grams'], result[i]['fats_per_100_grams'], result[i]['carb_per_100_grams']),
+                createImageBlock(result[i]['img'])
+            );
+            // // Добавляем новый див в конец родительского элемента
+            // oddDiv.innerHTML = htmlContentOdd;
+            // parentElement.appendChild(oddDiv);
+            // console.log("evenDiv");
+        } else {
+            // Создаем новый див для четных и нечетных элементов
+            var newDiv = document.createElement('div');
+            newDiv.className = 'u-size-30';
+            var htmlContent = createRow(
+                createImageBlock(result[i]['img']),
+                createContentBlock(result[i]['name'], result[i]['prot_per_100_grams'], result[i]['fats_per_100_grams'], result[i]['carb_per_100_grams'])
+);
+            // // Добавляем новый див в начало родительского элемента
+            // evenDiv.innerHTML = htmlContentEven;
+            // parentElement.appendChild(evenDiv);
+            // console.log("oddDiv");
+        }
     }
     // 3
         // Добавляем новый див в конец родительского элемента
@@ -221,42 +244,6 @@ for (let i = 0; i < result.length; i += 2) {
         parentElement.appendChild(newDiv);
 }
 
-// 2.5 и 2.5.1
-//         // Проверяем, чётное ли количество дочерних элементов
-//         if (childCount % 2 === 0) {
-//             var newDiv = document.createElement('div');
-//             newDiv.className = 'u-size-30';
-//             var htmlContent = createRow(
-//                 createImageBlock(),
-//                 createContentBlock("Round Bread", "(2) Made with 100% whole grain flour and high in fiber.", "$5.15"),
-//                 createImageBlock(),
-//                 createContentBlock("Farmers Loaf", "Slow-fermented sourdough Rye studded with Kalamata.", "$5.50")
-//             );
-//             // // Добавляем новый див в конец родительского элемента
-//             // oddDiv.innerHTML = htmlContentOdd;
-//             // parentElement.appendChild(oddDiv);
-//             // console.log("evenDiv");
-//         } else {
-//             // Создаем новый див для четных и нечетных элементов
-//             var newDiv = document.createElement('div');
-//             newDiv.className = 'u-size-30';
-//             var htmlContent = createRow(
-//                 createContentBlock("Farmers Loaf", "(1) Slow-fermented sourdough Rye studded with Kalamata.", "$5.50"),
-//                 createImageBlock(),
-//                 createContentBlock("Round Bread", "Made with 100% whole grain flour and high in fiber.", "$5.15"),
-//                 createImageBlock()
-// );
-//             // // Добавляем новый див в начало родительского элемента
-//             // evenDiv.innerHTML = htmlContentEven;
-//             // parentElement.appendChild(evenDiv);
-//             // console.log("oddDiv");
-//         }
-// // 3
-//         // Добавляем новый див в конец родительского элемента
-//          newDiv.innerHTML = htmlContent;
-//             parentElement.appendChild(newDiv);
-            // console.log("oddDiv VS evenDiv");
-// 
     }
 });
 

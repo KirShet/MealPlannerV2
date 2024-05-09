@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     '<input type="submit" value="" name="IconHeart" class="IconHeart">'+
                   '</form><!--product_title-->' +
                   '<h4 class="u-align-center u-custom-font u-font-open-sans u-product-control u-text u-text-2">' +
-                  '<a class="u-product-title-link" href="products/мужская-футболка.html">'+element["name"]+'</a>' +
+                  '<a class="u-product-title-link">'+element["name"]+'</a>' +
                   '</h4><!--/product_title-->' +
                   '<p class="u-align-center u-text u-text-3">' +
                   '<span class="u-icon" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">' +

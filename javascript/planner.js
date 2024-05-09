@@ -78,7 +78,7 @@ setTimeout(function() {
                 var newDiv = document.createElement("div");
                 newDiv.className = "u-align-center u-container-style u-image u-product-control u-products-item u-repeater-item u-image-1 u-meal-" + element.meals;
                 newDiv.setAttribute("data-product-id", "2");
-                newDiv.setAttribute("data-href", "products/мужская-футболка.html");
+                newDiv.setAttribute("data-href", "index.php");
                 newDiv.style.backgroundImage = 'url(images/meals/' + element.img + ')';
                 var htmlContent = '<div class="u-container-layout u-similar-container u-container-layout-1">' +
                 '<div class="custom-expanded u-black u-container-style u-group u-opacity u-opacity-50 u-group-1">' +
@@ -89,7 +89,7 @@ setTimeout(function() {
                   '<input type="submit" value="" name="IconHeart" class="IconHeart">'+
                 '</form><!--product_title-->' +
                 '<h4 class="u-align-center u-custom-font u-font-open-sans u-product-control u-text u-text-2">' +
-                '<a class="u-product-title-link" href="products/мужская-футболка.html">'+element["name"]+'</a>' +
+                '<a class="u-product-title-link" href="index.php">'+element["name"]+'</a>' +
                 '</h4><!--/product_title-->' +
                 '<p class="u-align-center u-text u-text-3">' +
                 '<span class="u-icon" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">' +
