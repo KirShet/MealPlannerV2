@@ -1,46 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-// Функция для вращения элемента
-function rotateElement(selector) {
-    var element = document.querySelector(selector);
-    if (element) {
-        element.style.transition = 'transform 1s linear';
-setInterval(function() {
-    element.style.transform = 'rotate(360deg)';
-    setTimeout(function() {
-        element.style.transform = 'rotate(0deg)';
-}, 1000);
-}, 2000); // Вращаем каждую секунду
-    }
-}
-// Запускаем вращение через 10 секунд
-setTimeout(function() {
-    rotateElement('.u-custom-font');
-}, 390000);
 
-// Запускаем вращение элемента с id "name-e4cc" через 5 секунд после первого вращения
-setTimeout(function() {
-    rotateElement('#name-e4cc');
-}, 9000);
-
-// Запускаем вращение элемента с id "email-e4cc" через 5 секунд после второго вращения
-setTimeout(function() {
-    rotateElement('#email-e4cc');
-}, 9400);
-
-// Запускаем вращение элемента с id "text-00a6" через 5 секунд после третьего вращения
-setTimeout(function() {
-    rotateElement('#text-00a6');
-}, 9400);
-
-// var element = document.querySelector('#name-e4cc');
-// element.style.transition = 'transform 1s linear';
-// setInterval(function() {
-//                 element.style.transform = 'rotate(360deg)';
-//                 setTimeout(function() {
-//                     element.style.transform = 'rotate(0deg)';
-// }, 1000);
-//             }, 2000); // Вращаем каждую секунду
-    // Query DOM elements once
     var mealElement = document.querySelector("#u-meal");
     var sectionElement = document.querySelector(".u-section-3");
     var submitButtons = document.querySelectorAll('.u-inner-form');

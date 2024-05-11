@@ -21,8 +21,9 @@
             <div class="u-align-center u-form-group u-form-submit u-form-group-4">
               <input type="submit" value="Подпишитесь " class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-2 u-hover-custom-color-6 u-radius-50 u-btn-1" wfd-invisible="true">
             </div>
-            <div class="u-form-send-message u-form-send-success u-form-meal-success" wfd-invisible="true">Thank you! Your message has been sent.</div>
-            <div class="u-form-send-error u-form-send-message u-form-meal-message" wfd-invisible="true">Unable to send your message. Please fix errors then try again.</div>
+            <div class="u-form-send-message u-form-send-success u-form-meal-success" wfd-invisible="true">
+Спасибо! Ваше сообщение было отправлено❄️</div>
+            <div class="u-form-send-error u-form-send-message u-form-meal-message" wfd-invisible="true">Не удалось отправить ваше сообщение. Пожалуйста, повторите попытку через миг🔥</div>
             <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
             <input type="hidden" name="formServices" value="204e408d-6095-4465-ad83-8d15063556d8">
           </form>
