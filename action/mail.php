@@ -137,7 +137,11 @@ $mail->IsHTML(true); // Устанавливаем формат сообщени
 
     // Отправляем письмо
     $mail->send();
+    
+    include 'admin.php';
+
     echo json_encode('Email sent successfully');
+
 } catch (Exception $e) {
     // тоже js
     echo json_encode("Message could not be sent. Mailer Error: {$mail->ErrorInfo}");
