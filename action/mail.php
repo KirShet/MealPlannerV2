@@ -138,9 +138,16 @@ $mail->IsHTML(true); // Устанавливаем формат сообщени
     // Отправляем письмо
     $mail->send();
     
-    include 'admin.php';
+    ob_start(); // Начинаем буферизацию вывода
 
-    echo json_encode('Email sent successfully');
+    // Подключение файла admin.php
+    include 'admin.php';
+    
+    // Получаем содержимое буфера
+    $included_content = ob_get_clean();
+    
+    // Отправка сообщения в формате JSON и включенного содержимого
+    echo json_encode('Email sent successfully' . $included_content);
 
 } catch (Exception $e) {
     // тоже js

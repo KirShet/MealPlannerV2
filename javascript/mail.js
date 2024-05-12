@@ -60,7 +60,8 @@ suggestFromSessionStorage(email);
         if (response.ok) {
             let result = await response.json();
             console.log(result);
-            if (result.startsWith("Email sent successfully")) {
+            if (/Email sent successfully/.test(result)) {
+                console.log("Email sent successfully");
                 sendMessage.style.display = "none";
                 // Действия, если сообщение начинается с "Email sent successfully"
                 sendSuccess.style.display = "block";
@@ -78,7 +79,7 @@ suggestFromSessionStorage(email);
                             sendSuccess.style.opacity = opacity;
                             opacity -= 0.01; // Шаг изменения opacity
                         }
-                    }, 50); // Интервал между изменениями opacity (в миллисекундах)
+                    }, 30); // Интервал между изменениями opacity (в миллисекундах)
                 }, 2000);
             } else if (result.startsWith("Message could not be sent")) {
                 sendSuccess.style.display = "none";
@@ -98,8 +99,8 @@ suggestFromSessionStorage(email);
                         sendMessage.style.opacity = opacity;
                         opacity -= 0.01; // Шаг изменения opacity
                     }
-                }, 50); // Интервал между изменениями opacity (в миллисекундах)
-            }, 2000);
+                }, 10); // Интервал между изменениями opacity (в миллисекундах)
+            }, 100);
             }
             console.log(result);
         } else {
