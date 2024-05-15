@@ -32,6 +32,9 @@
     <!-- nutrient_table -->
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/nutrient_table', 'js', 'src') ?> defer=""></script>
+    <!-- admin -->
+    <script class="u-script" type="text/javascript" 
+    <?= setHrefSrc('javascript/admin', 'js', 'src') ?> defer=""></script>
     <!-- <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/jquery', 'js', 'src') ?> defer=""></script>
     <script class="u-script" type="text/javascript" 
