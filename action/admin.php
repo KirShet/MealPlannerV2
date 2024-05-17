@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Получаем результат запроса в ассоциативном массиве
                 $user_data = $check_stmt->fetch(PDO::FETCH_ASSOC);
 
-                if($user_data['access']=='admin'){
+                if($user_data['access']=='admin' && password_verify($_POST['password'], $user_data['password'])){
                     $_SESSION['access'] = $user_data['access'];
                 }
                 echo json_encode("Message could not be sent. Users Error: This email is already registered.");

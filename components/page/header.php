@@ -60,7 +60,10 @@
             <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" <?= setHrefSrc('index') ?> style="padding: 10px 20px;">Главная</a>
 </li><li class="u-nav-item"><a class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" <?= setHrefSrc('nutrient_table') ?> style="padding: 10px 20px;">Приёмы пищи</a>
 </li><li class="u-nav-item"><a class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="#carousel_229a" style="padding: 10px 20px;">Подписка</a>
-</li></ul>
+</li><?php if( isset($_SESSION['access']) && $_SESSION['access'] === 'admin'){ ?>
+  <li class="u-nav-item"><a class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" <?= setHrefSrc('admin_meals') ?> style="padding: 10px 20px;">Панель</a>
+</li>
+<?php };?></ul>
           </div>
           <div class="u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
@@ -69,7 +72,10 @@
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
 <li class="u-nav-item"><a class="u-button-style u-nav-link" <?= setHrefSrc('index') ?>style="padding: 10px 20px;">Главная</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" <?= setHrefSrc('nutrient_table') ?> style="padding: 10px 20px;">Приёмы пищи</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#carousel_229a" style="padding: 10px 20px;">Подписка</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#carousel_229a" style="padding: 10px 20px;">Подписка</a></li>
+<?php if( isset($_SESSION['access']) && $_SESSION['access'] === 'admin'){ ?>
+<li class="u-nav-item"><a class="u-button-style u-nav-link" <?= setHrefSrc('admin_meals') ?> style="padding: 10px 20px;">Панель</a></li>
+<?php };?></ul>
               </div>
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
