@@ -418,7 +418,9 @@ color: #ee6a4e !important
   width: 45%;
   padding: 10px 0;
 }
-
+.u-offcanvas .u-sidenav {
+  flex-basis: 250px !important;
+}
 @media (max-width: 1199px) {
    .u-section-2 {
     background-position: 50% 50%;
