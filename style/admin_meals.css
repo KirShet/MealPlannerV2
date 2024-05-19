@@ -1,0 +1,8 @@
+.u-layout-row > .u-size-15-1 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 25%;
+}
+.u-text-palette-5-base{
+  color: #636363 !important;
+}

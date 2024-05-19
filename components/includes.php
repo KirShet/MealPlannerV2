@@ -21,7 +21,7 @@ function action($url = '#', $method = "POST")
     $url = ($config->root == '') ? "/action/$url.php" : "$config->root/action/$url.php";
     return " action = '$url' method = '$method' ";
 }
-function getMeal($meals = 'break', $meal = false)
+function getMeal($meals = '', $meal = false)
 {
     global $mysqli;
     $templ_cond = 'SUBSTRING(PFC,';

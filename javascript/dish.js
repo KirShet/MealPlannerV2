@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function(){
     document.addEventListener('submit', function(e) {
-      console.log("ChatGPT - Это не выводится");
+
       if (e.target.classList.contains('u-heart-form')) {
-        console.log("ChatGPT - Это не выводится");
+
         e.preventDefault();
         formSend(e);
       }else {
@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', function(){
         method: 'POST',
         body: formData
       });
-      console.log("ChatGPT - Это не выводится");
+
       if(response.ok){
         let result = await response.json();
         // document.querySelector('.u-product-title-link').innerText = name;
         // document.querySelector('.u-text-3').innerText = fats;
         // document.querySelector('.u-text-4').innerText = proteins;
         // document.querySelector('.u-text-5').innerText = carbohydrates;
-        console.log("ChatGPT - Это не выводится");
+
           // Находим элемент с классом "u-repeater u-repeater-1"
           var repeaterElement = document.querySelector("#u-meal");
 

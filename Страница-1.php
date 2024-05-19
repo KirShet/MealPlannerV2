@@ -180,7 +180,7 @@
             </div>
             <div class="u-align-center u-form-group u-form-submit u-form-group-4">
               <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-2 u-hover-custom-color-6 u-radius-50 u-btn-1">Подпишитесь </a>
-              <input type="submit" value="submit" class="u-form-control-hidden u-grey-5" wfd-invisible="true">
+              <input type="submit" value="Подпишитесь " wfd-invisible="true" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-2 u-hover-custom-color-6 u-radius-50 u-btn-1">
             </div>
             <div class="u-form-send-message u-form-send-success" wfd-invisible="true">Thank you! Your message has been sent.</div>
             <div class="u-form-send-error u-form-send-message" wfd-invisible="true">Unable to send your message. Please fix errors then try again.</div>

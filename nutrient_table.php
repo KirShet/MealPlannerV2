@@ -4,7 +4,7 @@ loadComponent('header');
 ?>
     <section class="u-align-center u-clearfix u-container-align-center u-section-1" id="carousel_1487">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h2 class="u-align-center u-text u-text-1"> Продукты и их каллории!</h2>
+        <h2 class="u-align-center u-text u-text-1"> Продукты и их каллории! </h2>
         <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-col">

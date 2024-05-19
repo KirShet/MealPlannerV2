@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <title>Главная</title>
     <?php 
-        if (basename($_SERVER['REQUEST_URI']) == "nutrient_table.php") {
+        if (basename($_SERVER['REQUEST_URI']) == "nutrient_table.php" || basename($_SERVER['REQUEST_URI']) == "admin_meals.php") {
     ?>
         <link rel="stylesheet" <?= setHrefSrc('style/nutrient_table', 'css') ?> media="screen">
     <?php 
@@ -17,6 +17,7 @@
         }
     ?>
     <link rel="stylesheet" <?= setHrefSrc('style/nicepage', 'css') ?> media="screen">
+    <link rel="stylesheet" <?= setHrefSrc('style/admin_meals', 'css') ?> media="screen">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/planner', 'js', 'src') ?> defer=""></script>
@@ -29,9 +30,23 @@
     <!-- mail -->
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/mail', 'js', 'src') ?> defer=""></script>
+    <?php 
+        if (basename($_SERVER['REQUEST_URI']) == "nutrient_table.php") {
+    ?>
     <!-- nutrient_table -->
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/nutrient_table', 'js', 'src') ?> defer=""></script>
+
+    <?php 
+        }else if (basename($_SERVER['REQUEST_URI']) == "admin_meals.php"){
+    ?>
+    <!-- admin_meals -->
+    <script class="u-script" type="text/javascript" 
+    <?= setHrefSrc('javascript/admin_meals', 'js', 'src') ?> defer=""></script>
+    
+    <?php 
+        }
+    ?>
     <!-- admin -->
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/admin', 'js', 'src') ?> defer=""></script>
