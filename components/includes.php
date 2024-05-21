@@ -60,3 +60,78 @@ function getMeal($meals = '', $meal = false)
 
     return $meal_time_results;
 }
+function emptyValues($arr, $fill_array) {
+    $values = array();
+    foreach ($arr as $key) {
+        if (empty($fill_array[$key])) {
+            return false;
+        }
+        $values[] = $fill_array[$key];
+    }
+    return $values;
+}
+function PFC($post_data, &$fill_array)
+{
+    $carb = $post_data['carb_per_100_grams'];
+    $fats = $post_data['fats_per_100_grams'];
+    $prot = $post_data['prot_per_100_grams'];
+
+    $call = $carb * 4 + $prot * 4 + $fats * 9;
+
+    $carb = ($carb * 4 / $call) * 100;
+    $fats = ($fats * 9 / $call) * 100;
+    $prot = ($prot * 4 / $call) * 100;
+
+    $fill_array['PFC'] = zero($prot) . ':' . zero($fats) . ':' . zero($carb);
+    $fill_array['call_per_100_grams'] = $call;
+    // echo "тут";
+    // print_r($fill_array);
+}
+function zero($nutrient)
+{
+    return $nutrient > 10 ? round($nutrient) : '0' . round($nutrient);
+}
+function insert($table, $arrVal, $values)
+{
+    global $mysqli;
+    $set = '';
+    foreach ($arrVal as $key => $value) {
+        $set .= "`$value` = :$value, ";
+    }
+    $set = substr($set, 0, -2) . " ";
+    $values = [
+        ':name' => $values[4], 
+        ':prot_per_100_grams' => $values[0], 
+        ':fats_per_100_grams' => $values[1], 
+        ':carb_per_100_grams' => $values[2], 
+        ':diet' => $values[3], 
+        ':PFC' => $values[5], 
+        ':call_per_100_grams' => $values[6]
+    ];
+    // Подготовка запроса
+$query = $mysqli->prepare("INSERT INTO `meal_time` SET 
+`name` = :name, 
+`prot_per_100_grams` = :prot_per_100_grams, 
+`fats_per_100_grams` = :fats_per_100_grams, 
+`carb_per_100_grams` = :carb_per_100_grams, 
+`diet` = :diet, 
+`PFC` = :PFC, 
+`call_per_100_grams` = :call_per_100_grams
+");
+// Проверка успешности подготовки запроса
+if ($query === false) {
+    throw new Exception('Ошибка подготовки запроса: ' . print_r($mysqli->errorInfo(), true));
+}
+
+// Выполнение запроса с массивом значений
+$result = $query->execute($values);
+
+// Проверка успешности выполнения запроса
+if ($result === false) {
+    throw new Exception('Ошибка выполнения запроса: ' . print_r($query->errorInfo(), true));
+} else {
+    echo 'Запись успешно добавлена!';
+}
+    print_r($query);
+    print_r($values);
+}

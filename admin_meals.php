@@ -21,23 +21,22 @@ loadComponent('header');
                         <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
                           <div class="u-form-email u-form-group">
                             <label for="email-5433" class="u-label">Название: </label>
-                            <input type="text" placeholder="Введите название блюда" id="title-5433" name="title" class="u-input u-input-rectangle" required="">
+                            <input type="text" placeholder="Введите название блюда" id="title-5433" name="name" class="u-input u-input-rectangle" required="">
                           </div>
                           <div class="u-form-email u-form-group">
                             <label for="email-5433" class="u-label">Белки: </label>
-                            <input type="number" placeholder="{количество} гр. на 100 гр." id="proteins-5433" name="proteins" class="u-input u-input-rectangle" required="">
+                            <input type="number" placeholder="{количество} гр. на 100 гр." id="proteins-5433" name="prot_per_100_grams" class="u-input u-input-rectangle" required="">
                           </div>
                           <div class="u-form-email u-form-group">
                             <label for="email-5433" class="u-label">Жиры: </label>
-                            <input type="email" placeholder="{количество} гр. на 100 гр." id="fats-5433" name="fats" class="u-input u-input-rectangle" required="">
+                            <input type="number" placeholder="{количество} гр. на 100 гр." id="fats-5433" name="fats_per_100_grams" class="u-input u-input-rectangle" required="">
                           </div>
                           <div class="u-form-email u-form-group">
                             <label for="email-5433" class="u-label">Углеводы: </label>
-                            <input type="email" placeholder="{количество} гр. на 100 гр." id="carbohydrates-5433" name="carbohydrates" class="u-input u-input-rectangle" required="">
+                            <input type="number" placeholder="{количество} гр. на 100 гр." id="carbohydrates-5433" name="carb_per_100_grams" class="u-input u-input-rectangle" required="">
                           </div>
                           <div class="u-align-left u-form-group u-form-submit">
-                            <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1">Отправить</a>
-                            <input type="submit" value="submit" class="u-form-control-hidden">
+                            <input type="submit" value="Отправить" class="u-btn u-btn-submit u-button-style u-btn-1">
                           </div>
                           <div class="u-form-send-message u-form-send-success"> Спасибо! Ваше сообщение отправлено. </div>
                           <div class="u-form-send-error u-form-send-message"> Отправка не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз. </div>

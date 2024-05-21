@@ -44,6 +44,9 @@
     <script class="u-script" type="text/javascript" 
     <?= setHrefSrc('javascript/admin_meals', 'js', 'src') ?> defer=""></script>
     
+    <script class="u-script" type="text/javascript" 
+    <?= setHrefSrc('javascript/admin_dish', 'js', 'src') ?> defer=""></script>
+    
     <?php 
         }
     ?>
