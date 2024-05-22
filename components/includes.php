@@ -100,13 +100,14 @@ function insert($table, $arrVal, $values)
     }
     $set = substr($set, 0, -2) . " ";
     $values = [
-        ':name' => $values[4], 
-        ':prot_per_100_grams' => $values[0], 
-        ':fats_per_100_grams' => $values[1], 
-        ':carb_per_100_grams' => $values[2], 
-        ':diet' => $values[3], 
-        ':PFC' => $values[5], 
-        ':call_per_100_grams' => $values[6]
+        ':name' => $values[0], 
+        ':prot_per_100_grams' => $values[1], 
+        ':fats_per_100_grams' => $values[2], 
+        ':carb_per_100_grams' => $values[3], 
+        ':diet' => $values[5], 
+        ':PFC' => $values[6], 
+        ':call_per_100_grams' => $values[7],
+        ':img' => $values[4]
     ];
     // Подготовка запроса
 $query = $mysqli->prepare("INSERT INTO `meal_time` SET 
@@ -116,7 +117,8 @@ $query = $mysqli->prepare("INSERT INTO `meal_time` SET
 `carb_per_100_grams` = :carb_per_100_grams, 
 `diet` = :diet, 
 `PFC` = :PFC, 
-`call_per_100_grams` = :call_per_100_grams
+`call_per_100_grams` = :call_per_100_grams,
+`img` = :img
 ");
 // Проверка успешности подготовки запроса
 if ($query === false) {

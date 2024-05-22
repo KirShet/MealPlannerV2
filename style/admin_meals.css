@@ -6,3 +6,25 @@
 .u-text-palette-5-base{
   color: #636363 !important;
 }
+.u-file-icon-admin-meals{
+  padding: 6px;
+    width: 64px;
+    height: 64px;
+    animation-timing-function: ease;
+    display: block;
+    line-height: 0;
+    border-width: 0px;
+    box-sizing: border-box;
+    position: relative;
+    pointer-events: initial;
+}
+.u-file-icon-admin-meals input{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+
+  background-size: cover; /* Заставляет изображение заполнять блок, сохраняя пропорции */
+  background-position: center; /* Центрирует изображение в блоке */
+  background-repeat: no-repeat; /* Предотвращает повторение изображения */
+  text-indent: -9999px;
+}

@@ -18,7 +18,15 @@ loadComponent('header');
                     <div class="u-container-layout u-container-layout-1">
                     <h4 class="u-custom-font u-text u-text-font u-text-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""> Блюда приёма пищи</h4>
                       <div class="custom-expanded u-form u-form-radios-spacing-0 u-form-1">
-                        <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+                        <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;" enctype="multipart/form-data">
+                          <div class="u-form-email u-form-group">
+                            <label for="email-5433" class="u-label">Изображение: </label>
+                            <span class="u-file-icon-admin-meals u-icon u-text-custom-color-3 u-icon-1">
+                            <!-- style="background-image: url('images/8765178-402a5f41.png')" -->
+                            <!-- <img src="images/8765178-402a5f41.png" alt=""> -->
+                            <input type="file" class="u-input u-input-rectangle" id="quantity" name="img" value="1" style="background-image: url('images/8765178-402a5f41.png')">
+                          </span>
+                          </div>
                           <div class="u-form-email u-form-group">
                             <label for="email-5433" class="u-label">Название: </label>
                             <input type="text" placeholder="Введите название блюда" id="title-5433" name="name" class="u-input u-input-rectangle" required="">
